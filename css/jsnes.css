@@ -46,7 +46,6 @@ body {
     padding: 0 20px;
     justify-content: center;
     flex-direction: column;
-    z-index: 9;
 }
 
 .controller-area {
@@ -57,7 +56,6 @@ body {
 }
 
 .action-area {
-    position: relative;
     display: flex;
     flex-direction: row;
 }
@@ -174,10 +172,11 @@ button.left.joydirection {
     height: 24px;
     width: 60px;
     outline: 0;
-    border: 8px solid #474f51;
+    /*border: 8px solid #474f51;莫*/
     box-shadow: 0 0 0 8px rgba(255, 255, 255, .1), inset 4px 4px 0 0px rgba(255, 255, 255, .4);
     background: #857b7a;
-    color: transparent;
+    /*color: transparent;莫*/
+    color: #000000;
     border-radius: 15px;
 }
 
@@ -193,7 +192,8 @@ button.left.joydirection {
     background: #857b7a;
     border-radius: 50%;
     outline: 0;
-    color: transparent;
+    /*color: transparent;莫*/
+    color: #000000;
     border: 8px solid #474f51;
     box-shadow: 0 0 0 10px rgba(255, 255, 255, .8), inset 5px 8px 0 0px rgba(255, 255, 255, .4), inset -5px -8px 0 0px rgba(0, 0, 0, .1);
 }
@@ -243,28 +243,21 @@ button.left.joydirection {
     position: absolute;
     left: 0;
     top: 0;
-    padding: 7px 10px;
+    width: 50px;
+    height: 50px;
     background: #857b7a;
     border-radius: 5px;
     text-align: center;
-    line-height: 18px;
+    line-height: 50px;
     color: #f8f1d7;
     font-weight: bold;
-    font-size: 14px;
-    text-decoration: underline;
-}
-
-.joy b {
-    display: inline-block;
-    margin-top: 2px;
-    font-size: 18px;
-    text-decoration: underline;
+    font-size: 30px;
 }
 
 .readme {
     position: absolute;
     left: 0;
-    top: 90px;
+    top: 5px;
     width: 90px;
     height: 30px;
     background: #857b7a;
@@ -275,11 +268,11 @@ button.left.joydirection {
     font-weight: bold;
     font-size: 20px;
 }
-.readme1 {
+.readme1{
     position: absolute;
-    right: 0;
-    top: 90px;
-    width: 90px;
+    right: 10px;
+    top: 78px;
+    width: 125px;
     height: 30px;
     background: #857b7a;
     border-radius: 5px;
